@@ -1,0 +1,30 @@
+section {
+  padding: var(--white-space_default);
+  line-height: 1.6;
+
+  .section-title {
+    text-align: center;
+    padding: var(--white-space_default);
+    background-color: #f5f5f5;
+  }
+
+  > div {
+    padding: var(--white-space_default);
+  }
+}
+
+#hero {
+  height: 85vh;
+}
+.slides {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+}
+
+.fr {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: var(--white-space_default);
+}

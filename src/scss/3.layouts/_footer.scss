@@ -1,0 +1,13 @@
+footer {
+  // padding: var(--white-space_default);
+
+  .tabs {
+    padding: calc(var(--white-space_default) *2) ;
+    background-color: var(--clr-dark-grey);
+  }
+
+  .copyright {
+    text-align: center;
+    padding: var(--white-space_default);
+  }
+}
