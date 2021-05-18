@@ -209,6 +209,25 @@ nav i {
 
 .partners {
   padding: var(--white-space_default);
+  grid-gap: 2rem;
+}
+
+.partners .partner {
+  height: 100%;
+}
+
+.partners .partner__picture {
+  height: 180px;
+  width: 100%;
+}
+
+.partners .partner__picture img {
+  height: 100%;
+  width: 100%;
+}
+
+.partners .partner:not(:last-child) {
+  margin-bottom: var(--white-space_default);
 }
 
 header {
