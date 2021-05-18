@@ -264,6 +264,11 @@ body {
   font-family: var(--font-serif);
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 :root {
   --clr-dark-grey: #2f455c;
   --clr-light-grey: #747474;
