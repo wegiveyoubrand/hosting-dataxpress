@@ -1,4 +1,13 @@
 /* ===== IMPORT ALL STYLINGS ===== */
+button {
+  padding: var(--white-space_default) calc(var(--white-space_default) * 2);
+  outline: 0;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  cursor: pointer;
+}
+
 #scrollToTop {
   position: fixed;
   bottom: var(--white-space_default);
@@ -36,6 +45,35 @@ section > div {
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: var(--white-space_default);
+}
+
+.about__picture {
+  background-image: url("/public/images/honey-yanibel-minaya-cruz-laORtJZaieU-unsplash.jpg");
+  height: 300px;
+  width: 100%;
+}
+
+#market {
+  text-align: center;
+}
+
+#market h3 {
+  padding: var(--white-space_default) 0;
+}
+
+#market button {
+  background-color: var(--clr-dark-grey);
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  font-weight: 500;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#market button:hover {
+  background-color: var(--clr-orange);
+  border-radius: 0;
 }
 
 .logo {
