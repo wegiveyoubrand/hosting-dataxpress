@@ -324,6 +324,7 @@ body {
 img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 :root {
