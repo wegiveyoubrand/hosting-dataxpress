@@ -175,6 +175,14 @@ nav i {
     height: calc(100vh - 80px);
     background-color: var(--clr-dark-grey);
     margin-left: auto;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-transition-delay: .3s;
+            transition-delay: .3s;
   }
   nav ul a {
     text-align: center;
@@ -183,6 +191,10 @@ nav i {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     top: 5rem;
+  }
+  nav.active ul {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
