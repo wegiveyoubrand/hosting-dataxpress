@@ -31,7 +31,7 @@ section > div {
 }
 
 #hero {
-  height: 100vh;
+  height: calc(100vh - 5rem);
   padding: 0;
   left: 0;
   margin-bottom: var(--white-space_default);
@@ -358,6 +358,26 @@ nav .contact {
   z-index: 3;
   -webkit-transition: 0.5s ease transform;
   transition: 0.5s ease transform;
+}
+
+.dots {
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.dots .dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.185);
+  -webkit-transition: .3s ease width;
+  transition: .3s ease width;
 }
 
 header {
