@@ -22,7 +22,7 @@ section {
 section .section-title {
   text-align: center;
   padding: calc(var(--white-space_default) * 2);
-  background-color: #f5f5f5;
+  background-color: var(--clr-orange);
   font-size: 2.5rem;
   line-height: 1;
 }
@@ -58,9 +58,19 @@ section > div {
   grid-gap: var(--white-space_default);
 }
 
-#about fr {
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+#about .sfr .section-title {
+  background-color: rgba(25, 187, 193, 0.1);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+#about .sfr ul {
+  list-style: none;
+}
+
+#about .sfr > div {
+  border-left: 3px solid var(--clr-orange);
+  padding-left: var(--white-space_default);
 }
 
 .about__picture {
@@ -317,6 +327,7 @@ nav .contact {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  gap: var(--white-space_default);
 }
 
 .partners .partner {
@@ -325,7 +336,7 @@ nav .contact {
 
 .partners .partner__picture {
   height: 180px;
-  width: 100%;
+  width: 200px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 5px var(--clr-dark-grey);
           box-shadow: 0 0 5px var(--clr-dark-grey);
