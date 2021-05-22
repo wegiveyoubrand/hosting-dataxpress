@@ -254,6 +254,7 @@ nav .contact {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  margin: auto;
 }
 
 .card-title {
