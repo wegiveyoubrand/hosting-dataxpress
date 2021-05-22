@@ -58,8 +58,13 @@ section > div {
   grid-gap: var(--white-space_default);
 }
 
+#about fr {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
 .about__picture {
-  background-image: url("/public/images/honey-yanibel-minaya-cruz-laORtJZaieU-unsplash.jpg");
+  background-image: url("/public/images/andrew-neel-ute2XAFQU2I-unsplash.jpg");
   height: 300px;
   width: 100%;
 }
@@ -308,8 +313,10 @@ nav .contact {
 }
 
 .partners {
-  padding: var(--white-space_default);
-  grid-gap: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 
 .partners .partner {
@@ -319,6 +326,9 @@ nav .contact {
 .partners .partner__picture {
   height: 180px;
   width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px var(--clr-dark-grey);
+          box-shadow: 0 0 5px var(--clr-dark-grey);
 }
 
 .partners .partner__picture img {
