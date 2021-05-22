@@ -349,8 +349,7 @@ nav .contact {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 90%;
-  height: 100%;
-  max-height: 80vh;
+  height: auto;
   max-width: 80vw;
   display: -webkit-box;
   display: -ms-flexbox;
