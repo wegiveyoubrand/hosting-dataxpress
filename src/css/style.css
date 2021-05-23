@@ -79,15 +79,16 @@ section > div {
   width: 100%;
 }
 
-#market {
+.offers {
   text-align: center;
 }
 
-#market h3 {
+.offers h3 {
   padding: var(--white-space_default) 0;
 }
 
-#market button {
+.offers button {
+  margin-top: var(--white-space_default);
   background-color: var(--clr-dark-grey);
   color: #fff;
   letter-spacing: 1px;
@@ -97,7 +98,7 @@ section > div {
   transition: 0.3s ease-in-out;
 }
 
-#market button:hover {
+.offers button:hover {
   background-color: var(--clr-orange);
   border-radius: 0;
 }
@@ -234,7 +235,6 @@ nav .contact {
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: var(--white-space_default);
-  padding: var(--white-space_default);
 }
 
 .card {
