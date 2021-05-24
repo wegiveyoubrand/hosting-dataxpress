@@ -46,6 +46,12 @@ section > div {
   padding: var(--white-space_default);
 }
 
+.section-content {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
 #hero {
   position: relative;
   height: calc(100vh - 5rem);
@@ -116,6 +122,9 @@ section > div {
 }
 
 .offers button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-top: var(--white-space_default);
   background-color: var(--clr-dark-grey);
   color: #fff;
