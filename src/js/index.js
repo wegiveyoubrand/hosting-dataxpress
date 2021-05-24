@@ -10,6 +10,7 @@ company.forEach((company) =>
 const navContainer = document.querySelector("nav");
 const navigation = document.querySelector(".nav-list");
 const navItems = document.querySelectorAll(".nav-item");
+const navLinks = document.querySelectorAll(".nav-link");
 
 const contact = document.querySelector(".contact");
 const contactToggle = document.querySelector("#contactToggle");
