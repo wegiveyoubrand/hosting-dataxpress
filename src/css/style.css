@@ -645,9 +645,11 @@ footer .copyright {
 
 #contact .contact-via {
   height: 200px;
-  background: radial-gradient(var(--clr-light-green), var(--clr-dark-grey));
-  border-radius: 30px;
   padding: var(--white-space_default);
+  border-radius: 30px;
+  background: radial-gradient(var(--clr-light-green), var(--clr-dark-grey));
+  color: var(--clr-grey);
+  font-size: 1.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,8 +659,14 @@ footer .copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.75rem;
-  color: var(--clr-grey);
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out color;
+  transition: .3s ease-in-out color;
+}
+
+#contact .contact-via:hover {
+  background: var(--clr-orange);
+  color: var(--clr-dark-grey);
 }
 
 #contact footer {

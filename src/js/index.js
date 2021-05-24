@@ -1,4 +1,11 @@
 const menuToggle = document.querySelector(".menu-toggle");
+const company = document.querySelectorAll(".company");
+
+company.forEach((company) =>
+  company.addEventListener("click", () => {
+    location.href = "/index.html";
+  })
+);
 
 const navContainer = document.querySelector("nav");
 const navigation = document.querySelector(".nav-list");
