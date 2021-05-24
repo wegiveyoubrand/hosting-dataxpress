@@ -115,6 +115,12 @@ section > div {
   margin-bottom: unset;
 }
 
+@media (max-width: 720px) {
+  .about_story {
+    font-size: 1.35rem;
+  }
+}
+
 .offers {
   text-align: center;
 }
