@@ -9,17 +9,18 @@ button {
 }
 
 .divider {
-  height: 1.9rem;
-  width: 1.9rem;
+  height: 32px;
+  width: 32px;
   border-radius: 100%;
-  background-color: var(--clr-orange);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--clr-orange)), to(var(--clr-dark-grey)));
+  background: linear-gradient(var(--clr-orange), var(--clr-dark-grey));
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
   margin: 15px auto;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 #scrollToTop {
@@ -82,49 +83,32 @@ section > div {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+}
+
+.about {
   text-align: center;
 }
 
-#about .sfr .section-title {
-  background-color: rgba(25, 187, 193, 0.1);
-  font-weight: 500;
-  font-size: 2rem;
-}
-
-#about .sfr ul {
-  list-style: none;
-}
-
-#about .sfr > div {
-  border-left: 3px solid var(--clr-green);
-  padding-left: var(--white-space_default);
-}
-
-.about__picture {
-  background-image: url("/public/images/andrew-neel-ute2XAFQU2I-unsplash.jpg");
-  height: 300px;
-  width: 100%;
-}
-
 .about_story {
+  padding: 0 var(--white-space_default);
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 600;
   max-width: 920px;
   margin: auto;
-  line-height: 1.2;
   letter-spacing: 1px;
-  color: rgba(34, 34, 34, 0.9);
+  text-align: center;
+  color: var(--clr-dark-grey);
 }
 
 @media (max-width: 720px) {
   .about_story {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     line-height: 1.5;
   }
 }
 
-.offers {
-  text-align: center;
+.about_story span {
+  opacity: 0.7;
 }
 
 .offers h3 {
@@ -188,7 +172,6 @@ section > div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-gap: 2rem;
 }
 
 .action-section button {
@@ -201,6 +184,8 @@ section > div {
   transition: 0.3s ease-in;
   font-size: 100%;
   letter-spacing: 1px;
+  margin: var(--white-space_default) 0;
+  text-align: center;
 }
 
 .action-section button:hover {
@@ -440,13 +425,13 @@ nav .contact {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .partners .partner {
   height: 100%;
   text-align: center;
-  width: 100%;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,8 +445,12 @@ nav .contact {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #f3f3f3;
+  background-color: var(--clr-dark-grey);
   padding: var(--white-space_default);
+  -webkit-box-shadow: 0 0 5px var(--clr-dark-grey);
+          box-shadow: 0 0 5px var(--clr-dark-grey);
+  border-radius: 30px;
+  color: #fff;
 }
 
 .partners .partner:not(:last-child) {
@@ -473,11 +462,10 @@ nav .contact {
 }
 
 .partners .partner__picture {
-  height: 180px;
+  height: 200px;
   width: 200px;
+  border-radius: 50%;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 5px var(--clr-dark-grey);
-          box-shadow: 0 0 5px var(--clr-dark-grey);
 }
 
 .partners .partner__picture img {
