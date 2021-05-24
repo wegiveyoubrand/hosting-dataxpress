@@ -58,6 +58,19 @@ section > div {
   grid-gap: var(--white-space_default);
 }
 
+#about > div {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
 #about .sfr .section-title {
   background-color: rgba(25, 187, 193, 0.1);
   font-weight: 500;
@@ -77,6 +90,29 @@ section > div {
   background-image: url("/public/images/andrew-neel-ute2XAFQU2I-unsplash.jpg");
   height: 300px;
   width: 100%;
+}
+
+.about_story {
+  font-size: 1.75rem;
+  font-weight: 600;
+  max-width: 920px;
+  margin: auto;
+  line-height: 1.2;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #333;
+  opacity: 0.7;
+  padding-bottom: var(--white-space_default);
+  margin-bottom: var(--white-space_default);
+  border-bottom: 3px solid var(--clr-dark-grey);
+}
+
+.about_story.ii {
+  border-bottom: unset;
+  border-top: 3px solid var(--clr-dark-grey);
+  padding-top: var(--white-space_default);
+  margin-top: var(--white-space_default);
+  margin-bottom: unset;
 }
 
 .offers {
@@ -384,17 +420,37 @@ nav .contact {
   color: #555;
 }
 
+.partners-wrapper {
+  overflow: hidden;
+}
+
 .partners {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
-  gap: var(--white-space_default);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .partners .partner {
   height: 100%;
   text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .partners .partner > * {
