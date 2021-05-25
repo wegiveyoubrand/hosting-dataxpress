@@ -425,7 +425,6 @@ nav .contact {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
 }
 
 .testimonial__image {
@@ -433,7 +432,6 @@ nav .contact {
   left: 0;
   width: 200px;
   height: 200px;
-  margin-right: var(--white-space_default);
   border-radius: 50%;
   overflow: hidden;
   -ms-grid-column-align: center;
