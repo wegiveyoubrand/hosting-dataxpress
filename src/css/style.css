@@ -634,7 +634,7 @@ nav .contact {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #222;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -645,7 +645,7 @@ nav .contact {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 100;
+  z-index: 1000;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
@@ -669,7 +669,7 @@ nav .contact {
 header {
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
   padding: var(--white-space_default) calc(var(--white-space_default) * 2);
   display: -webkit-box;
   display: -ms-flexbox;
