@@ -121,6 +121,10 @@ section > div {
   padding: var(--white-space_default) 0;
 }
 
+.offers .section-title {
+  margin-bottom: 20px;
+}
+
 .offers button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
