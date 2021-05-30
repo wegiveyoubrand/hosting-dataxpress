@@ -1,12 +1,6 @@
 const slides = document.querySelectorAll(".slide");
 let i = 0;
 
-// slides.forEach((slide, i) => {
-//   slide.classList.remove("show");
-//   slide.classList.add("hide");
-//   slide[1].classList.add("show");
-// });
-
 setInterval(function () {
   slides.forEach((slide, i) => {
     slide.classList.remove("show");
