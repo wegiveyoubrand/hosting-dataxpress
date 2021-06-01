@@ -14,8 +14,7 @@ const navLinks = document.querySelectorAll(".nav-link");
 
 
 
-const contact = document.querySelector(".contact");
-const contactToggle = document.querySelector("#contactToggle");
+
 const header = document.querySelector("header");
 
 navItems.forEach((navItem) => {
@@ -26,7 +25,6 @@ navItems.forEach((navItem) => {
 });
 
 menuToggle.addEventListener("click", menuToggleOnActive);
-contactToggle.addEventListener("click", showContact);
 
 function menuToggleOnActive() {
   menuToggle.classList.toggle("active");
