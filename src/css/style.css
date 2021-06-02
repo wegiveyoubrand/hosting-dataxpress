@@ -206,6 +206,16 @@ section > div {
   border-radius: 0;
 }
 
+#reasons > div {
+  text-align: center;
+}
+
+#reasons a {
+  display: block;
+  text-align: center;
+  color: inherit;
+}
+
 .logo {
   cursor: pointer;
 }
@@ -338,6 +348,9 @@ nav .contact {
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: var(--white-space_default);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .card {
@@ -350,14 +363,17 @@ nav .contact {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
+  height: 100%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .card-title {
@@ -372,6 +388,7 @@ nav .contact {
   width: 150px;
   overflow: hidden;
   border-radius: 100%;
+  margin-bottom: 20px;
 }
 
 .card-image img {
@@ -379,6 +396,21 @@ nav .contact {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.card-description {
+  line-height: 1.6;
+  color: #000;
+}
+
+.card:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 15px var(--clr-dark-grey);
+          box-shadow: 0 0 15px var(--clr-dark-grey);
 }
 
 .menu-toggle {
