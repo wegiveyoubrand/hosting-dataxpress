@@ -664,7 +664,7 @@ nav a:hover, nav a.active {
   height: 100px;
   scroll-snap-align: start;
   text-align: center;
-  width: 250px;
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -902,6 +902,38 @@ form {
   height: 100%;
   width: 100%;
   padding: 20px;
+}
+
+.account-wrapper {
+  padding-top: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.account-wrapper > p {
+  text-align: center;
+  color: var(--clr-blue);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+
+.accounts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 720px) {
+  .accounts {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.account {
+  padding: 20px;
+  width: 100%;
 }
 
 header {
