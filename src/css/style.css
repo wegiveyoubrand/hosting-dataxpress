@@ -631,7 +631,9 @@ nav a:hover, nav a.active {
 }
 
 .partners-wrapper {
+  background-color: #000;
   overflow: hidden;
+  width: 100%;
 }
 
 .partners {
@@ -639,16 +641,30 @@ nav a:hover, nav a.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  padding: 0 20px;
 }
 
 .partners .partner {
-  height: 100%;
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 100px;
+  scroll-snap-align: start;
   text-align: center;
-  width: auto;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -666,7 +682,6 @@ nav a:hover, nav a.active {
   padding: var(--white-space_default);
   -webkit-box-shadow: 0 0 5px var(--clr-dark-grey);
           box-shadow: 0 0 5px var(--clr-dark-grey);
-  border-radius: 30px;
   color: #fff;
 }
 
