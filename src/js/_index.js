@@ -7,13 +7,11 @@ company.forEach((company) =>
   })
 );
 
-const navContainer = document.querySelector("nav");
+const navContainer = document.querySelector(".navigation");
 const navigation = document.querySelector(".nav-list");
 const navItems = document.querySelectorAll(".nav-item");
 const navLinks = document.querySelectorAll(".nav-link");
-
-
-
+const body = document.querySelector("body");
 
 const header = document.querySelector("header");
 
@@ -39,6 +37,23 @@ function menuToggleOnClose() {
   navigation.classList.remove("active");
 }
 
+let scrollpos = window.scrollY;
+const header_height = header.offsetHeight;
+
+const add_class_on_scroll = () => header.classList.add("scrolled");
+const remove_class_on_scroll = () => header.classList.remove("scrolled");
+
+window.addEventListener("scroll", function () {
+  scrollpos = window.scrollY;
+
+  if (scrollpos >= header_height) {
+    add_class_on_scroll();
+  } else {
+    remove_class_on_scroll();
+  }
+
+  console.log(scrollpos);
+});
 // function showContact() {
 //   navContainer.classList.toggle("active");
 //   contactToggle.classList.toggle("active");
