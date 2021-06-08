@@ -310,6 +310,12 @@ section > div {
   line-height: 1.1;
 }
 
+@media (max-width: 720px) {
+  .action-section h2 {
+    font-size: 2.5rem;
+  }
+}
+
 .action-section button {
   background-color: var(--clr-dark-grey);
   color: #fff;
