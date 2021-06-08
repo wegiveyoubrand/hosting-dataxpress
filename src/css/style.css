@@ -130,6 +130,7 @@ section > div {
 
 @media (max-width: 720px) {
   #hero .hero-text {
+    text-align: center;
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -270,18 +271,43 @@ section > div {
 }
 
 .action-section {
-  background-color: var(--clr-blue);
+  background-color: var(--clr-light-blue);
+  display: -ms-grid;
+  display: grid;
   padding: var(--white-space_default);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.action-section form {
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.action-section .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.action-section .form-group input {
+  width: 100%;
+  padding: 20px 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid var(--clr-green);
+}
+
+@media (max-width: 720px) {
+  .action-section {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.action-section h2 {
+  font-size: 3rem;
+  line-height: 1.1;
 }
 
 .action-section button {
