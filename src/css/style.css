@@ -1040,6 +1040,19 @@ footer .tabs {
   grid-gap: 15px;
 }
 
+footer .tabs .tab ul {
+  list-style: none;
+}
+
+footer .tabs .tab ul a {
+  color: inherit;
+  opacity: 0.7;
+}
+
+footer .tabs .tab ul a:hover {
+  opacity: 1;
+}
+
 @media (max-width: 720px) {
   footer .tabs {
     -ms-grid-columns: 11fr;
