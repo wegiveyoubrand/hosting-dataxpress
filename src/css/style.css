@@ -1052,6 +1052,7 @@ footer .tabs .tab ul a {
   text-decoration: none;
   color: inherit;
   opacity: 0.7;
+  font-style: 14px;
 }
 
 footer .tabs .tab ul a:hover {
