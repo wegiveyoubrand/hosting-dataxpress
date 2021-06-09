@@ -467,7 +467,7 @@ nav a:hover, nav a.active {
             transition-delay: 0.3s;
   }
   nav .navigation .nav-list li {
-    line-height: 60px;
+    line-height: 45px;
   }
   nav .navigation .nav-list a {
     height: 100%;
@@ -572,6 +572,8 @@ nav a:hover, nav a.active {
   position: absolute;
   height: 3px;
   background-color: #000;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   right: 0;
 }
 
@@ -583,6 +585,10 @@ nav a:hover, nav a.active {
 .menu-toggle span::before {
   top: 2px;
   width: 20px;
+}
+
+.menu-toggle.white span::before, .menu-toggle.white span::after {
+  background: #fff;
 }
 
 .testimonials {
@@ -1009,6 +1015,22 @@ form {
 
 .reasons-wrapper .reason > * {
   margin-bottom: 15px;
+}
+
+.reasons-wrapper .reason a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.reasons-wrapper .reason a i {
+  margin-right: 10px;
 }
 
 .reasons-wrapper .reason_diag {

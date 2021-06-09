@@ -40,8 +40,14 @@ function menuToggleOnClose() {
 let scrollpos = window.scrollY;
 const header_height = header.offsetHeight;
 
-const add_class_on_scroll = () => header.classList.add("scrolled");
-const remove_class_on_scroll = () => header.classList.remove("scrolled");
+const add_class_on_scroll = () => {
+  header.classList.add("scrolled");
+  menuToggle.classList.add("white");
+};
+const remove_class_on_scroll = () => {
+  header.classList.remove("scrolled");
+  menuToggle.classList.remove("white");
+};
 
 window.addEventListener("scroll", function () {
   scrollpos = window.scrollY;
