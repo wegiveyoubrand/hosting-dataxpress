@@ -1012,8 +1012,8 @@ form {
 }
 
 .reasons-wrapper .reason_diag {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   background-color: var(--clr-blue);
   border-radius: 50%;
 }
