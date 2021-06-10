@@ -178,6 +178,19 @@ section > div {
   grid-gap: var(--white-space_default);
 }
 
+@media (max-width: 720px) {
+  .fr > .image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .fr > .sfr {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
 #about > div {
   display: -ms-grid;
   display: grid;
@@ -1093,6 +1106,22 @@ footer .tabs {
   -ms-grid-columns: 2fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   grid-gap: 15px;
+}
+
+footer .tabs .tab h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+footer .tabs .tab h2::before {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  content: "";
+  height: 5px;
+  width: 20%;
+  background-color: var(--clr-green);
 }
 
 footer .tabs .tab ul {
