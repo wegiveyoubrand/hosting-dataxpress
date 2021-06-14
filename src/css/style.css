@@ -330,8 +330,8 @@ section > div {
 
 @media (max-width: 720px) {
   .action-section {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
   }
 }
 
@@ -342,7 +342,7 @@ section > div {
 
 @media (max-width: 720px) {
   .action-section h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 }
 
