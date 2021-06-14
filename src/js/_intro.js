@@ -4,8 +4,8 @@ const introContent = document.querySelector("#introContent");
 
 setTimeout(function () {
   introContent.classList.add("hide");
-}, 3000);
+}, 2500);
 
 setTimeout(function () {
   intro.classList.add("hide");
-}, 5000);
+}, 3000);
