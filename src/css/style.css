@@ -300,6 +300,10 @@ section > div {
       grid-template-columns: repeat(2, 1fr);
 }
 
+.action-section h2 {
+  white-space: pre-wrap;
+}
+
 .action-section .row {
   width: 100%;
 }
