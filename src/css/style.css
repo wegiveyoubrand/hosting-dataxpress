@@ -421,7 +421,7 @@ nav a {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   z-index: 10;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 nav a i {
@@ -901,10 +901,31 @@ nav a:hover, nav a.active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.formOptions button:first-child {
-  margin-bottom: 20px;
+.formOptions button {
+  width: 200px;
+  border-radius: 5px;
+  background-color: var(--clr-green);
+  color: #fff;
+  font-weight: 500;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 10px #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.formOptions button:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px var(--clr-green);
+          box-shadow: 0 0 10px var(--clr-green);
+  color: var(--clr-green);
 }
 
 .formOptions.close {
@@ -958,6 +979,19 @@ nav a:hover, nav a.active {
   }
 }
 
+.formOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 form {
   background-color: #f2f2f2;
   height: 100%;
@@ -965,6 +999,32 @@ form {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
+}
+
+form h2 {
+  margin-bottom: 20px;
+}
+
+form .input-container {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+}
+
+form input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: var(--clr-green);
+  color: var(--clr-white);
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .account-wrapper {
@@ -1408,11 +1468,20 @@ footer .copyright {
 
 #authentication {
   height: calc(100% - 10rem);
-  background: var(--clr-blue);
 }
 
 #authentication header {
-  background-color: transparent;
+  background-color: var(--clr-blue);
+  -webkit-box-shadow: 0px 0px 10px 0 #fff;
+          box-shadow: 0px 0px 10px 0 #fff;
+}
+
+#authentication header .nav-list {
+  color: #fff;
+}
+
+#authentication header .menu-toggle span::after, #authentication header .menu-toggle span::before {
+  background-color: #fff;
 }
 
 #authentication main {

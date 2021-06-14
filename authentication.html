@@ -1,60 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DataX Authentication</title>
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
 
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" href="./src/css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataX Authentication</title>
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
 
-    <!-- MATERIAL ICONS -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
-  <body id="authentication">
-    <header class="header">
-      <div class="company">
-        <div class="logo">
-          <img src="/public/images/DataXpressLogo.png" alt="" />
-        </div>
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="./src/css/style.css" />
+
+  <!-- MATERIAL ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body id="authentication">
+  <header id="header">
+    <div class="company">
+      <div class="logo" id="companyLogo">
+        <img src="./public/images/DataXpressLogo.png" alt="" />
       </div>
+    </div>
+
+    <nav class="nav" id=" nav">
+      <div class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">
+              SOLUTIONS <i class="material-icons">insights</i></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"
+              >RESOURCES
+              <i class="material-icons">insert_chart_outlined</i></a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#benefits"
+              >FORUM <i class="material-icons">forum</i></a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href=""
+              >CONTACT <i class="material-icons">contact_support</i></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./authentication.html"
+              >LOGIN <i class="material-icons">perm_identity</i></a
+            >
+          </li>
+        </ul>
+      </div>
+
       <div class="menu-toggle">
-        <i class="material-icons">menu</i>
+        <span></span>
       </div>
-    </header>
+    </nav>
+  </header>
 
-    <main>
-      <div class="display">
-        <div class="formOptions">
-          <button>Login</button>
-          <button>Register</button>
-        </div>
+  <main>
+    <div class="display">
+      <div class="formOptions">
+        <button>Login</button>
+        <button>Register</button>
+      </div>
 
-        <div class="formContainer">
-            <form action="" id="form">
+      <div class="formContainer">
+        <form action="" id="form">
           <h2 class="form-title">Login</h2>
 
-              <div class="input-container">
-                <label for="username">username</label>
-                <input type="text" />
-              </div>
-              <div class="input-container">
-                <label for="username">Password</label>
-                <input type="text" />
-              </div>
-
-              <button>Login</button>
-            </form>
+          <div class="input-container">
+            <label for="username">username</label>
+            <input type="text" />
           </div>
-        </div>
+          <div class="input-container">
+            <label for="username">Password</label>
+            <input type="text" />
+          </div>
+
+          <button>Login</button>
+        </form>
       </div>
-    </main>
-    <script src="/src/js/_form.js" type="module"></script>
-  </body>
+    </div>
+    </div>
+  </main>
+  <script src="/src/js/_form.js" type="module"></script>
+  <script src="./src/js/_index.js" type="module"></script>
+
+</body>
+
 </html>
