@@ -300,6 +300,10 @@ section > div {
       grid-template-columns: repeat(2, 1fr);
 }
 
+.action-section .row {
+  width: 100%;
+}
+
 .action-section form {
   width: 100%;
   border-radius: 20px;
