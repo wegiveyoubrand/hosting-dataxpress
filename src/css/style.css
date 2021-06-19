@@ -236,6 +236,10 @@ section > div {
   opacity: 0.7;
 }
 
+.offers {
+  padding: 2rem;
+}
+
 .offers h3 {
   padding: var(--white-space_default) 0;
 }
@@ -365,6 +369,10 @@ section > div {
   border-radius: 0;
 }
 
+#reasons {
+  padding: 2rem;
+}
+
 #reasons > div {
   text-align: center;
 }
@@ -373,6 +381,28 @@ section > div {
   display: block;
   text-align: center;
   color: inherit;
+}
+
+#benefits .fr {
+  padding: 2rem;
+}
+
+#benefits .image {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#benefits .image img {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
 }
 
 .logo {
@@ -1039,6 +1069,7 @@ form button {
 }
 
 .account-wrapper {
+  padding: 2rem;
   padding-top: 1.5rem;
   padding-bottom: 20px;
 }
@@ -1096,6 +1127,7 @@ form button {
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 2rem;
 }
 
 .reasons-wrapper .reason {
