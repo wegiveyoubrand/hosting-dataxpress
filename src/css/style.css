@@ -37,8 +37,8 @@ section {
 section .section-title {
   text-align: center;
   padding: calc(var(--white-space_default) * 1.8);
-  background-color: var(--clr-blue);
-  color: var(--clr-white);
+  background-color: var(--blue);
+  color: var(--white);
   font-size: 2.25rem;
   line-height: 1.1;
 }
@@ -59,7 +59,7 @@ section > div {
   padding: 0;
   left: 0;
   width: 100%;
-  background-color: var(--clr-blue);
+  background-color: var(--blue);
   overflow-y: hidden;
   display: -ms-grid;
   display: grid;
@@ -93,7 +93,7 @@ section > div {
 }
 
 #hero .hero-image::after {
-  background-color: rgba(15, 47, 133, 0.7);
+  background-color: var(--blue);
   position: absolute;
   top: 0;
   left: 0;
@@ -104,7 +104,7 @@ section > div {
 
 @media (max-width: 720px) {
   #hero .hero-image::after {
-    background-color: rgba(15, 47, 133, 0.85);
+    background-color: var(--blue);
   }
 }
 
@@ -159,11 +159,11 @@ section > div {
   font-size: 1rem;
   padding: 10px 20px;
   border-radius: 5px;
-  border: 3px solid var(--clr-green);
+  border: 3px solid var(--light-blue);
 }
 
 #hero .hero-actions button {
-  background-color: var(--clr-green);
+  background-color: var(--light-blue);
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -253,7 +253,7 @@ section > div {
       -ms-grid-row-align: center;
       align-self: center;
   margin-top: var(--white-space_default);
-  background-color: var(--clr-dark-grey);
+  background-color: var(--light-blue);
   color: #fff;
   letter-spacing: 1px;
   border-radius: 30px;
@@ -263,7 +263,7 @@ section > div {
 }
 
 .offers button:hover {
-  background-color: var(--clr-orange);
+  background-color: var(--light-blue) !important;
   border-radius: 0;
 }
 
@@ -296,7 +296,7 @@ section > div {
 }
 
 .action-section {
-  background-color: var(--clr-light-blue);
+  background-color: var(--light-blue);
   display: -ms-grid;
   display: grid;
   padding: var(--white-space_default);
@@ -406,11 +406,15 @@ section > div {
 }
 
 .logo {
+  height: 100%;
+  width: 80px;
   cursor: pointer;
 }
 
 .logo img {
-  width: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 nav {
@@ -464,7 +468,7 @@ nav a {
 }
 
 nav a i {
-  margin-left: 8px;
+  margin-right: 10px;
 }
 
 nav a:hover, nav a.active {
@@ -508,7 +512,7 @@ nav a:hover, nav a.active {
             flex-direction: column;
     width: 300px;
     height: calc(100vh - 80px);
-    background-color: var(--clr-dark-grey);
+    background-color: var(--blue);
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -622,37 +626,18 @@ nav a:hover, nav a.active {
   margin-left: 5rem;
 }
 
-.menu-toggle span {
-  position: relative;
-  cursor: pointer;
-}
-
-.menu-toggle span::after, .menu-toggle span::before {
-  content: "";
-  position: absolute;
-  height: 3px;
-  background-color: #000;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  right: 0;
-}
-
-.menu-toggle span::after {
-  top: -5px;
-  width: 25px;
-}
-
-.menu-toggle span::before {
-  top: 2px;
-  width: 20px;
-}
-
 .menu-toggle i {
   font-size: 2rem;
 }
 
 .menu-toggle.white span::before, .menu-toggle.white span::after {
   background: #fff;
+}
+
+@media (min-width: 720px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .testimonials {
@@ -1188,7 +1173,7 @@ header {
   width: 100%;
   height: 5rem;
   padding: var(--white-space_default) calc(var(--white-space_default) * 2);
-  background-color: white;
+  background-color: var(--white);
   color: #000;
   -webkit-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
@@ -1200,7 +1185,7 @@ header img {
 }
 
 header.scrolled {
-  background: var(--clr-blue);
+  background: var(--blue);
   color: #fff;
 }
 
@@ -1216,7 +1201,7 @@ footer {
 
 footer .tabs {
   padding: calc(var(--white-space_default) * 2);
-  background-color: var(--clr-dark-grey);
+  background-color: var(--blue);
   width: 100%;
   color: #fff;
   display: -ms-grid;
@@ -1260,7 +1245,7 @@ footer .tabs .tab h2::before {
   content: "";
   height: 5px;
   width: 20%;
-  background-color: var(--clr-green);
+  background-color: var(--light-blue);
 }
 
 footer .tabs .tab ul {
@@ -1565,19 +1550,12 @@ img {
 }
 
 :root {
-  --clr-dark-grey: #000;
-  --clr-light-grey: #747474;
-  --clr-grey: #dae1e7;
-  --clr-green: #097865;
-  --clr-light-green: #19bbc1;
-  --soft__clr-green: (lighten(#097865, 0.8));
-  --clr-light-blue: #1dcdfe;
-  --clr-blue: #0a1841;
-  --clr-black: #000;
-  --clr-white: #fff;
-  --clr-yellow: #eeda2f;
-  --clr-purple: #e269ab;
-  --clr-orange: #f7612c;
+  /* Restyling colors to use the HSL values */
+  --blue: hsl(225, 73%, 15%);
+  --light-blue: hsl(225, 74%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --trans_blue: hsla(225, 73%, 15%, .5);
 }
 
 :root {
