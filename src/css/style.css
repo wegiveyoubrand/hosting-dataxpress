@@ -93,7 +93,7 @@ section > div {
 }
 
 #hero .hero-image::after {
-  background-color: rgba(15, 47, 133, 0.3);
+  background-color: rgba(15, 47, 133, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -645,6 +645,10 @@ nav a:hover, nav a.active {
 .menu-toggle span::before {
   top: 2px;
   width: 20px;
+}
+
+.menu-toggle i {
+  font-size: 2rem;
 }
 
 .menu-toggle.white span::before, .menu-toggle.white span::after {
@@ -1566,8 +1570,9 @@ img {
   --clr-grey: #dae1e7;
   --clr-green: #097865;
   --clr-light-green: #19bbc1;
-  --clr-blue: #0f2f85;
+  --soft__clr-green: (lighten(#097865, 0.8));
   --clr-light-blue: #1dcdfe;
+  --clr-blue: #0a1841;
   --clr-black: #000;
   --clr-white: #fff;
   --clr-yellow: #eeda2f;
