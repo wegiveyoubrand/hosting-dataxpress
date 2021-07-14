@@ -89,7 +89,7 @@ section > div {
 }
 
 .choose-data-analysts .cards .card {
-  height: 200px;
+  min-height: 200px;
   -webkit-box-shadow: 0 0 15px rgba(6, 8, 63, 0.2);
           box-shadow: 0 0 15px rgba(6, 8, 63, 0.2);
   display: -webkit-box;
@@ -104,8 +104,10 @@ section > div {
 }
 
 .choose-data-analysts .cards .card p {
-  font-size: 1.75rem;
+  padding: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
+  text-align: left;
 }
 
 #hero {
