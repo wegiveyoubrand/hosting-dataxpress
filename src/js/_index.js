@@ -29,8 +29,7 @@ function menuToggleOnActive() {
   navContainer.classList.toggle("active");
   navigation.classList.toggle("active");
 
-  contactToggle.classList.remove("active");
-  contact.classList.remove("active");
+  body.classList.toggle("fixed");
 }
 
 function menuToggleOnClose() {
@@ -60,10 +59,3 @@ window.addEventListener("scroll", function () {
 
   console.log(scrollpos);
 });
-// function showContact() {
-//   navContainer.classList.toggle("active");
-//   contactToggle.classList.toggle("active");
-//   contact.classList.toggle("active");
-
-//   // navigation.classList.remove('active')
-// }
