@@ -215,7 +215,7 @@ section > div {
 }
 
 .action-section {
-  background-color: var(--light-blue);
+  background-color: var(--trans_blue);
   display: -ms-grid;
   display: grid;
   padding: var(--white-space_default);
@@ -245,10 +245,9 @@ section > div {
 .action-section .form-group input {
   width: 100%;
   padding: 20px 10px;
-  border-radius: 10px;
   font-size: 1rem;
   outline: none;
-  border: 1px solid var(--clr-green);
+  border: 1px solid var(--light-blue);
 }
 
 @media (max-width: 720px) {
@@ -270,22 +269,22 @@ section > div {
 }
 
 .action-section button {
-  background-color: var(--clr-dark-grey);
+  background-color: var(--blue);
   color: #fff;
   outline: none;
   border: none;
-  border-radius: 30px;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   font-size: 100%;
   letter-spacing: 1px;
   margin: var(--white-space_default) 0;
+  -webkit-box-shadow: 0 0 10px rgba(33, 80, 222, 0.207);
+          box-shadow: 0 0 10px rgba(33, 80, 222, 0.207);
   text-align: center;
 }
 
 .action-section button:hover {
-  background-color: var(--clr-orange);
-  border-radius: 0;
+  background-color: var(--light-blue);
 }
 
 #reasons {
@@ -1476,7 +1475,7 @@ img {
   --light-blue: hsl(225, 74%, 50%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
-  --trans_blue: hsla(225, 73%, 15%, .5);
+  --trans_blue: hsla(225, 73%, 15%, 0.05);
 }
 
 :root {
