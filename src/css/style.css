@@ -1444,6 +1444,50 @@ footer .copyright {
   padding: 20px;
 }
 
+#VerifiedAnalysts {
+  padding-bottom: 5rem;
+  color: #000;
+}
+
+#VerifiedAnalysts .title {
+  background: var(--blue);
+  font-family: var(--font-san-serif);
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+#VerifiedAnalysts .analysts {
+  padding: 2rem;
+}
+
+#VerifiedAnalysts .analysts .analyst {
+  -webkit-box-shadow: 0 0 10px rgba(21, 12, 60, 0.2);
+          box-shadow: 0 0 10px rgba(21, 12, 60, 0.2);
+}
+
+#VerifiedAnalysts button {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--light-blue);
+  color: #fff;
+}
+
+#VerifiedAnalysts button i {
+  margin-left: 20px;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
