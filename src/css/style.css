@@ -1455,9 +1455,15 @@ footer .copyright {
   padding: 2rem;
   text-align: center;
   color: #fff;
-  font-weight: 700;
+  font-weight: 300;
+  font-family: var(--serif);
+  text-transform: uppercase;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5rem;
+  z-index: 1000;
   font-size: 2rem;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
 }
 
 #VerifiedAnalysts .analysts {

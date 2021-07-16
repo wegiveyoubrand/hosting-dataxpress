@@ -1,0 +1,26 @@
+[
+  {
+    "_ID": 1,
+    "name": "Dr. Bola Oladugba",
+    "degree": ["B.Sc.", "M.Sc.", "Ph.D."],
+    "address": "Department of Statistics, Unviersity of Nigeria, Nsukka",
+    "field": ["Experiment of Design", "Multivariate Analysis"],
+    "proficiency": ["SPSS", "SAS", "STATA", "R"]
+  },
+  {
+    "_ID": 2,
+    "name": "Mr. Samson Ugwu",
+    "degree": ["B.Sc.", "M.Sc."],
+    "address": "Department of Statistics, Unviersity of Nigeria, Nsukka",
+    "field": ["Survey", "Experiment of Design", "Time Series Analyst"],
+    "proficiency": ["SPSS", "SAS", "STATA", "R"]
+  },
+  {
+    "_ID": 3,
+    "name": "Mr. Samson Ugwu",
+    "degree": ["B.Sc.", "M.Sc."],
+    "address": "Department of Statistics, Unviersity of Nigeria, Nsukka",
+    "field": ["Survey", "Experiment of Design", "Time Series Analyst"],
+    "proficiency": ["SPSS", "SAS", "STATA", "R"]
+  }
+]
