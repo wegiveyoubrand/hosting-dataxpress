@@ -426,6 +426,18 @@ nav li {
   margin-right: 5px;
 }
 
+nav li.contactus {
+  border: 2px solid var(--orange);
+}
+
+nav li.contactus a {
+  padding: calc(var(--white-space_default) / 1.8) calc(var(--white-space_default) / 1);
+}
+
+nav li.contactus:hover {
+  background: var(--orange);
+}
+
 nav a {
   position: relative;
   text-decoration: none;
@@ -1645,6 +1657,7 @@ img {
   --light-blue: hsl(225, 74%, 50%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
+  --orange: hsl(6, 85%, 60%);
   --trans_blue: hsla(225, 73%, 15%, 0.05);
 }
 
