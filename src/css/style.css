@@ -301,6 +301,68 @@ section > div {
   color: inherit;
 }
 
+.reasons-wrapper h2 {
+  opacity: 0.85;
+}
+
+.reasons-wrapper .reasons-to-choose {
+  grid-gap: 20px;
+}
+
+.reasons-wrapper .reason {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
+          box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
+  height: auto;
+}
+
+.reasons-wrapper p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.reasons-wrapper a {
+  color: var(--blue);
+  font-size: 1.25rem;
+  padding: 10px 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.reasons-wrapper a i {
+  font-size: 2rem;
+}
+
+.reasons-wrapper a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  content: "";
+  opacity: 0.3;
+  background-color: var(--light-blue);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.reasons-wrapper a:hover {
+  padding: 10px;
+}
+
+.reasons-wrapper a:hover::after {
+  height: 100%;
+}
+
 #benefits .fr {
   padding: 2rem;
 }
