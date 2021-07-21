@@ -363,10 +363,6 @@ section > div {
   height: 100%;
 }
 
-#benefits .fr {
-  padding: 2rem;
-}
-
 #benefits .image {
   height: 300px;
   width: 100%;
@@ -376,7 +372,7 @@ section > div {
 
 #benefits .image img {
   height: 100%;
-  width: 90%;
+  width: 100%;
   margin: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -545,6 +541,7 @@ nav a:hover, nav a.active {
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: var(--white-space_default);
 }
 
 .card {
