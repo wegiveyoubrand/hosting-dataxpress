@@ -363,6 +363,14 @@ section > div {
   height: 100%;
 }
 
+#benefits .fr > * {
+  margin-bottom: 10px;
+}
+
+#benefits .sfr > * {
+  margin-bottom: 10px;
+}
+
 #benefits .image {
   height: 300px;
   width: 100%;
