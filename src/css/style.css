@@ -811,65 +811,66 @@ nav a:hover, nav a.active {
   margin-bottom: var(--white-space_default);
 }
 
-.slide-container {
-  width: 100%;
-  height: 100%;
+.slider {
   position: relative;
+  width: 100%;
+  height: calc(100vh - 5rem);
+  overflow: hidden;
 }
 
-.slide {
-  position: absolute;
+.slider .slides {
+  position: relative;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  text-align: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  list-style-type: none;
 }
 
-@media (min-width: 720px) {
-  .slide {
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-    -ms-grid-rows: 100%;
-        grid-template-rows: 100%;
-  }
-}
-
-.slide.show {
-  opacity: 100%;
-  -webkit-transition: 1.5s ease-in-out;
-  transition: 1.5s ease-in-out;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+.slider .slides li input[type="radio"] {
+  position: relative;
+  bottom: 1rem;
   z-index: 1;
+  height: 20px;
+  width: 20px;
 }
 
-.slide.hide {
-  opacity: 0;
-  -webkit-transition: 1.5s ease-in-out;
-  transition: 1.5s ease-in-out;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-  z-index: -1;
+.slider .slides li input[type="radio"]:not(:last-child) {
+  margin-right: 10px;
 }
 
-.slide img {
+.slider .slides li input[type="radio"]:checked ~ .slide {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.slider .slides li .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 #intro {
@@ -1147,6 +1148,68 @@ form button {
   width: 100px;
   background-color: var(--clr-blue);
   border-radius: 50%;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 5rem);
+  overflow: hidden;
+}
+
+.slider .slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  list-style-type: none;
+}
+
+.slider .slides li input[type="radio"] {
+  position: relative;
+  bottom: 1rem;
+  z-index: 1;
+  height: 20px;
+  width: 20px;
+}
+
+.slider .slides li input[type="radio"]:not(:last-child) {
+  margin-right: 10px;
+}
+
+.slider .slides li input[type="radio"]:checked ~ .slide {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.slider .slides li .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 header {
