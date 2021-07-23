@@ -1717,7 +1717,7 @@ footer .copyright {
 }
 
 #VerifiedAnalysts .analysts {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 #VerifiedAnalysts .analysts.cards {
