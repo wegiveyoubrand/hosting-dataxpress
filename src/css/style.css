@@ -1695,6 +1695,10 @@ footer .copyright {
   margin-top: 0;
 }
 
+#VerifiedAnalysts main {
+  padding: 0 5%;
+}
+
 #VerifiedAnalysts .title {
   background: var(--blue);
   font-family: var(--font-san-serif);
@@ -1716,6 +1720,11 @@ footer .copyright {
   padding: 2rem;
 }
 
+#VerifiedAnalysts .analysts.cards {
+  -ms-grid-columns: (minmax(160px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
 #VerifiedAnalysts .analysts .analyst {
   -webkit-box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
           box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
@@ -1724,11 +1733,11 @@ footer .copyright {
 }
 
 #VerifiedAnalysts .analysts .analyst__image {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 100%;
   overflow: hidden;
   margin-bottom: 10px;
-  border-radius: 50%;
+  border-radius: 10px;
   -webkit-box-shadow: 0 5px 15px rgba(21, 12, 60, 0.111);
           box-shadow: 0 5px 15px rgba(21, 12, 60, 0.111);
 }
