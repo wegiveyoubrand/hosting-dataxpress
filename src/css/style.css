@@ -1721,8 +1721,8 @@ footer .copyright {
 }
 
 #VerifiedAnalysts .analysts.cards {
-  -ms-grid-columns: (minmax(160px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 #VerifiedAnalysts .analysts .analyst {
