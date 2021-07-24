@@ -1709,6 +1709,13 @@ footer .copyright {
           box-shadow: 0 0 5px rgba(21, 12, 60, 0.1);
   border-radius: 10px;
   margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+@media (min-width: 720px) {
+  #VerifiedAnalysts .container-content h1 {
+    font-size: 2rem;
+  }
 }
 
 #VerifiedAnalysts .container-content h1 i {
