@@ -1718,8 +1718,13 @@ footer .copyright {
 
 #VerifiedAnalysts .container-content p {
   line-height: 1.4;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0;
+}
+
+@media (min-width: 680px) {
+  #VerifiedAnalysts .container-content p {
+    margin: 0 20px;
+  }
 }
 
 #VerifiedAnalysts .title {
