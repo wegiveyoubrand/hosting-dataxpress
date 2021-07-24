@@ -1661,10 +1661,16 @@ footer .copyright {
           align-items: center;
   text-align: center;
   font-weight: 300;
-  font-size: 3rem;
   text-transform: uppercase;
+  font-size: 2rem;
   letter-spacing: 1px;
   padding: 20px;
+}
+
+@media (min-width: 680px) {
+  #VerifiedAnalysts .container-title {
+    font-size: 3rem;
+  }
 }
 
 #VerifiedAnalysts .container-title#skew-1 {
