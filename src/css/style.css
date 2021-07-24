@@ -1647,8 +1647,8 @@ footer .copyright {
 
 #VerifiedAnalysts .container-title {
   position: relative;
-  height: 300px;
-  color: rgba(56, 219, 255, 0.679);
+  height: 250px;
+  color: #38dbff;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1662,15 +1662,9 @@ footer .copyright {
   text-align: center;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 2rem;
-  letter-spacing: 1px;
+  font-size: 1rem;
+  letter-spacing: 2px;
   padding: 20px;
-}
-
-@media (min-width: 680px) {
-  #VerifiedAnalysts .container-title {
-    font-size: 3rem;
-  }
 }
 
 #VerifiedAnalysts .container-title#skew-1 {
