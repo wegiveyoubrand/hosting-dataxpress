@@ -1664,13 +1664,7 @@ footer .copyright {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 20px;
-  font-size: 2rem;
-}
-
-@media (min-width: 720px) {
-  #VerifiedAnalysts .container-title {
-    font-size: 2rem;
-  }
+  font-size: 1.2rem;
 }
 
 #VerifiedAnalysts .container-title#skew-1 {
@@ -1710,10 +1704,7 @@ footer .copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
-  -webkit-box-shadow: 0 0 5px rgba(21, 12, 60, 0.1);
-          box-shadow: 0 0 5px rgba(21, 12, 60, 0.1);
-  border-radius: 10px;
+  padding: 10px 0;
   margin-bottom: 10px;
 }
 
@@ -1723,14 +1714,7 @@ footer .copyright {
 }
 
 #VerifiedAnalysts .container-content p {
-  line-height: 1.4;
-  margin: 0;
-}
-
-@media (min-width: 680px) {
-  #VerifiedAnalysts .container-content p {
-    margin: 0 20px;
-  }
+  line-height: 1.6;
 }
 
 #VerifiedAnalysts .title {
