@@ -32,6 +32,8 @@ button {
 section {
   line-height: 1.6;
   position: relative;
+  scroll-snap-align: start;
+  height: auto;
 }
 
 section .section-title {
@@ -52,6 +54,7 @@ section > div {
   display: grid;
   max-width: 100%;
   padding: 2rem 5%;
+  scroll-snap-align: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1642,16 +1645,56 @@ footer .copyright {
   color: #000;
 }
 
-#VerifiedAnalysts header {
+#VerifiedAnalysts .container-title {
   position: relative;
+  height: 300px;
+  color: rgba(56, 219, 255, 0.679);
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-weight: 300;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 20px;
 }
 
-#VerifiedAnalysts .container {
-  margin-top: 0;
+#VerifiedAnalysts .container-title#skew-1 {
+  background: white;
 }
 
-#VerifiedAnalysts main {
-  padding: 0 5% !important;
+#VerifiedAnalysts .container-title#skew-1::after {
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+}
+
+#VerifiedAnalysts .container-title::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--blue);
+  content: "";
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+#VerifiedAnalysts .container-content {
+  padding: 20px 5% !important;
+}
+
+#VerifiedAnalysts .container-content > div {
+  margin-bottom: 20px;
 }
 
 #VerifiedAnalysts .title {
@@ -1767,6 +1810,10 @@ body {
   height: 100%;
   font-family: var(--font-sans-serif);
   font-size: 14px;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  scroll-padding-top: 100px;
 }
 
 img {
