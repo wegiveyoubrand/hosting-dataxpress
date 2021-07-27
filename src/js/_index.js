@@ -26,7 +26,7 @@ menuToggle.addEventListener("click", menuToggleOnActive);
 
 function menuToggleOnActive() {
   menuToggle.classList.toggle("active");
-  navContainer.classList.toggle("active");
+  navContainer.classList.toggle("active"); 
   navigation.classList.toggle("active");
 
   body.classList.toggle("fixed");
