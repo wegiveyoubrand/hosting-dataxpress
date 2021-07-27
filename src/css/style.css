@@ -1291,15 +1291,14 @@ form button {
   position: relative;
   background-color: #fff;
   overflow: hidden;
-  -webkit-transform-origin: top;
-          transform-origin: top;
   height: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   overflow-y: auto;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
-  transform-origin: top;
+  -webkit-transform-origin: top;
+          transform-origin: top;
   margin-bottom: -60px;
 }
 
