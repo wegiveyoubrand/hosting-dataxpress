@@ -477,8 +477,8 @@ nav i {
   -webkit-transform-origin: center;
           transform-origin: center;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 15px var(--clr-dark-grey);
-          box-shadow: 0 0 15px var(--clr-dark-grey);
+  -webkit-box-shadow: 0 0 5px 10px var(--clr-dark-grey);
+          box-shadow: 0 0 5px 10px var(--clr-dark-grey);
 }
 
 .cards .card.why {
@@ -492,8 +492,8 @@ nav i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
-          box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
+  -webkit-box-shadow: 0 5px 15px rgba(21, 12, 60, 0.05);
+          box-shadow: 0 5px 15px rgba(21, 12, 60, 0.05);
 }
 
 .cards .card.why p {
@@ -523,8 +523,8 @@ nav i {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
-  -webkit-box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
-          box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
+  -webkit-box-shadow: 0 5px 15px rgba(21, 12, 60, 0.05);
+          box-shadow: 0 5px 15px rgba(21, 12, 60, 0.05);
 }
 
 .cards .card.reason > * {
