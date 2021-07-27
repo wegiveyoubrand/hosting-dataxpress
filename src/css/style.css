@@ -242,26 +242,10 @@ section > div {
   background-color: var(--light-blue);
 }
 
-#benefits .cards .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #eee;
-}
-
 #benefits .cards .card .image {
   height: 100px;
   width: 100px;
+  border-radius: 50%;
   position: relative;
   overflow: hidden;
 }
@@ -472,8 +456,8 @@ nav i {
   -webkit-transform-origin: center;
           transform-origin: center;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 5px 10px var(--clr-dark-grey);
-          box-shadow: 0 0 5px 10px var(--clr-dark-grey);
+  -webkit-box-shadow: 0 0 5px 10px rgba(21, 12, 60, 0.05);
+          box-shadow: 0 0 5px 10px rgba(21, 12, 60, 0.05);
 }
 
 .cards .card.why {
@@ -543,6 +527,37 @@ nav i {
 
 .cards .card.reason h2 {
   opacity: 0.85;
+}
+
+.cards .card.service {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
+          box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
+  padding-bottom: 4rem;
+}
+
+.cards .card.service button {
+  position: absolute;
+  bottom: 10px;
+  padding: 10px;
+  width: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: rgba(240, 84, 66, 0.337);
+  font-family: inherit;
+  font-weight: 700;
 }
 
 .menu-toggle {
