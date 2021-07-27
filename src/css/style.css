@@ -487,8 +487,7 @@ nav i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: 0 5px 15px rgba(21, 12, 60, 0.05);
-          box-shadow: 0 5px 15px rgba(21, 12, 60, 0.05);
+  background-color: rgba(21, 12, 60, 0.05);
 }
 
 .cards .card.why p {
@@ -518,8 +517,8 @@ nav i {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
-  -webkit-box-shadow: 0 5px 15px rgba(21, 12, 60, 0.05);
-          box-shadow: 0 5px 15px rgba(21, 12, 60, 0.05);
+  -webkit-box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
+          box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
 }
 
 .cards .card.reason > * {
