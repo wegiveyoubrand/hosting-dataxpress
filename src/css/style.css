@@ -450,30 +450,25 @@ nav i {
 .cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: var(--white-space_default);
-}
-
-.cards {
-  display: -ms-grid;
-  display: grid;
   width: 100%;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 20px 5%;
+  grid-gap: var(--white-space_default);
 }
 
 .cards .card {
   min-height: 200px;
   height: auto;
+  margin: 0 auto;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
   background-color: #fcfcfc;
-  padding: 20px;
+  padding: var(--white-space_default);
 }
 
 .cards .card:hover {
