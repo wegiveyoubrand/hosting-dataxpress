@@ -1699,7 +1699,8 @@ footer .copyright {
 }
 
 #VerifiedAnalysts .container-content > div {
-  margin-bottom: 20px;
+  margin-bottom: 3rem;
+  background-color: rgba(240, 84, 66, 0.05);
 }
 
 #VerifiedAnalysts .container-content h1 {
@@ -1712,8 +1713,11 @@ footer .copyright {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 0;
-  margin-bottom: 10px;
+  padding: 20px 0;
+  padding-left: 1rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 5px rgba(240, 84, 66, 0.111);
+          box-shadow: 0 3px 5px rgba(240, 84, 66, 0.111);
 }
 
 #VerifiedAnalysts .container-content h1 i {
@@ -1721,8 +1725,38 @@ footer .copyright {
   font-size: 1rem;
 }
 
-#VerifiedAnalysts .container-content p {
-  line-height: 1.6;
+#VerifiedAnalysts .container-content ul {
+  margin-left: 2rem;
+  font-size: 1rem;
+  padding: 2rem 5%;
+}
+
+#VerifiedAnalysts .container-content .about-us,
+#VerifiedAnalysts .container-content .mission,
+#VerifiedAnalysts .container-content .vision,
+#VerifiedAnalysts .container-content .values {
+  background-color: var(--blue);
+  -webkit-box-shadow: 0 5px 10px rgba(61, 39, 39, 0.333);
+          box-shadow: 0 5px 10px rgba(61, 39, 39, 0.333);
+}
+
+#VerifiedAnalysts .container-content .about-us p,
+#VerifiedAnalysts .container-content .about-us ul,
+#VerifiedAnalysts .container-content .mission p,
+#VerifiedAnalysts .container-content .mission ul,
+#VerifiedAnalysts .container-content .vision p,
+#VerifiedAnalysts .container-content .vision ul,
+#VerifiedAnalysts .container-content .values p,
+#VerifiedAnalysts .container-content .values ul {
+  line-height: 2;
+  padding: 2rem 5%;
+  color: #fff;
+  font-weight: 300;
+  font-style: 1rem;
+}
+
+#VerifiedAnalysts .container-content .team .cards {
+  padding: 20px 5%;
 }
 
 #VerifiedAnalysts .title {
@@ -1747,8 +1781,8 @@ footer .copyright {
 }
 
 #VerifiedAnalysts .analysts.cards {
-  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 #VerifiedAnalysts .analysts .analyst {
@@ -1758,18 +1792,29 @@ footer .copyright {
 }
 
 #VerifiedAnalysts .analysts .analyst__image {
-  height: 150px;
+  position: relative;
+  height: 200px;
   width: 100%;
   overflow: hidden;
   margin-bottom: 10px;
   border-radius: 10px;
 }
 
+#VerifiedAnalysts .analysts .analyst__image::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: rgba(240, 84, 66, 0.111);
+}
+
 #VerifiedAnalysts .analysts .analyst__image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #VerifiedAnalysts .analysts .analyst button {
@@ -1784,6 +1829,7 @@ footer .copyright {
   font-weight: bold;
   color: var(--blue);
   margin-bottom: -1px;
+  text-align: center;
 }
 
 #VerifiedAnalysts .analysts .analyst__degree {
