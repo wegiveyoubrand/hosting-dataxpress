@@ -1456,12 +1456,6 @@ footer .copyright {
 
 #contact main {
   position: relative;
-  background-image: url("/public/images/feedback-2849602_1920.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
-  background-color: var(--blue);
   color: #fff;
   height: calc(100% - 5rem);
   margin-bottom: 0 !important;
@@ -1484,22 +1478,59 @@ footer .copyright {
           align-items: center;
 }
 
-#contact .contact-via {
-  padding: 20px;
+#contact .contact .modal {
+  position: fixed;
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--blue);
+}
+
+#contact .pre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  text-align: left;
-  font-size: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact .pre > div {
+  height: 4rem;
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  color: var(--blue);
+  -webkit-box-shadow: 0 0 5px 10px var(--blue);
+          box-shadow: 0 0 5px 10px var(--blue);
+  cursor: pointer;
+}
+
+#contact .pre > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 580px) {
+  #contact .pre {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #contact .pre > div:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
 }
 
 #blog header .menu-toggle {
@@ -1824,7 +1855,7 @@ footer .copyright {
 }
 
 #VerifiedAnalysts .analysts .analyst__name {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: var(--serif);
   font-weight: bold;
   color: var(--blue);
@@ -1840,7 +1871,7 @@ footer .copyright {
 
 #VerifiedAnalysts .analysts .analyst__expertise {
   line-height: 1.6;
-  font-weight: 700;
+  font-weight: 500;
   opacity: 0.9;
 }
 
