@@ -48,14 +48,14 @@ const remove_class_on_scroll = () => {
   menuToggle.classList.remove("white");
 };
 
-window.addEventListener("scroll", function () {
-  scrollpos = window.scrollY;
+// window.addEventListener("scroll", function () {
+//   scrollpos = window.scrollY;
 
-  if (scrollpos >= header_height) {
-    add_class_on_scroll();
-  } else {
-    remove_class_on_scroll();
-  }
+//   if (scrollpos >= header_height) {
+//     add_class_on_scroll();
+//   } else {
+//     remove_class_on_scroll();
+//   }
 
-  console.log(scrollpos);
-});
+//   console.log(scrollpos);
+// });
