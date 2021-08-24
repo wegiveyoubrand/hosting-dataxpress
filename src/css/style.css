@@ -912,6 +912,7 @@ nav i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 100vw;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1338,6 +1339,7 @@ form button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 100vw;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
