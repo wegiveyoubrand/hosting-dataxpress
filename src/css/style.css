@@ -908,11 +908,13 @@ nav i {
           transform: rotateY(90deg);
   -webkit-transform-origin: left;
           transform-origin: left;
-  padding: 0 5%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -922,6 +924,24 @@ nav i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.slider .slides li .slide > div {
+  background-color: rgba(10, 24, 66, 0.7);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider .slides li .slide > div h1 {
+  letter-spacing: 2px;
 }
 
 .slider .slides li .slide-img {
@@ -937,8 +957,10 @@ nav i {
 }
 
 .slider .slides li .slide-img img {
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
 }
 
 .slider .slides li .slide h1 {
@@ -1312,11 +1334,13 @@ form button {
           transform: rotateY(90deg);
   -webkit-transform-origin: left;
           transform-origin: left;
-  padding: 0 5%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1326,6 +1350,24 @@ form button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.slider .slides li .slide > div {
+  background-color: rgba(10, 24, 66, 0.7);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider .slides li .slide > div h1 {
+  letter-spacing: 2px;
 }
 
 .slider .slides li .slide-img {
@@ -1341,8 +1383,10 @@ form button {
 }
 
 .slider .slides li .slide-img img {
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
 }
 
 .slider .slides li .slide h1 {
