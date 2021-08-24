@@ -1,4 +1,59 @@
 /* ===== IMPORT ALL STYLINGS ===== */
+:root {
+  /* Restyling colors to use the HSL values */
+  --blue: hsl(225, 73%, 15%);
+  --light-blue: hsl(225, 74%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --orange: hsl(6, 85%, 60%);
+  --trans_blue: hsla(225, 73%, 15%, 0.05);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-sans-serif);
+  font-size: 14px;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  scroll-padding-top: 100px;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+:root {
+  --font-serif: "Open Sans";
+  --font-sans-serif: "Rubik";
+}
+
+:root {
+  --white-space_default: 20px;
+}
+
+:root {
+  --phone-screen: 620px;
+  --tablet-screen: 720px;
+  --laptop-screen: 960px;
+}
+
 button {
   padding: var(--white-space_default) calc(var(--white-space_default) * 2);
   outline: 0;
@@ -173,7 +228,7 @@ section > div {
   background-color: var(--trans_blue);
   display: -ms-grid;
   display: grid;
-  padding: var(--white-space_default);
+  padding: var(--white-space_default) 5%;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
@@ -432,7 +487,7 @@ nav i {
   width: 100%;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 20px 5%;
+  padding: 2rem 5%;
   grid-gap: var(--white-space_default);
 }
 
@@ -459,7 +514,6 @@ nav i {
           transform: scale(0.98);
   -webkit-transform-origin: center;
           transform-origin: center;
-  cursor: pointer;
   -webkit-box-shadow: 0 0 5px 10px rgba(21, 12, 60, 0.05);
           box-shadow: 0 0 5px 10px rgba(21, 12, 60, 0.05);
 }
@@ -476,6 +530,11 @@ nav i {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: rgba(21, 12, 60, 0.05);
+  padding: 2rem !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .cards .card.why p {
@@ -504,9 +563,30 @@ nav i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
   -webkit-box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
           box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
+  min-height: 350px;
+  padding: 0;
+}
+
+.cards .card.reason > div {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.cards .card.reason > div > div {
+  padding: 20px;
+  background-color: rgba(10, 24, 66, 0.85);
+  color: #fff;
 }
 
 .cards .card.reason > * {
@@ -517,12 +597,12 @@ nav i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   text-decoration: none;
   color: inherit;
   font-weight: 500;
+  padding: 10px 20px;
 }
 
 .cards .card.reason a i {
@@ -531,6 +611,10 @@ nav i {
 
 .cards .card.reason h2 {
   opacity: 0.85;
+}
+
+.cards .card.reason p {
+  line-height: 1.7;
 }
 
 .cards .card.service {
@@ -1109,7 +1193,7 @@ form button {
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 2rem 5%;
+  padding: 4rem 5%;
 }
 
 .reasons-wrapper .reason {
@@ -1121,6 +1205,20 @@ form button {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px;
+}
+
+.reasons-wrapper .reason:first-child a {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.reasons-wrapper .reason .dot {
+  height: 14px;
+  width: 14px;
+  margin: .15rem 1rem;
+  border-radius: 50%;
+  background-color: #f05442;
 }
 
 .reasons-wrapper .reason > * {
@@ -1140,7 +1238,7 @@ form button {
 }
 
 .reasons-wrapper .reason a i {
-  margin-right: 10px;
+  margin: 0 10px;
 }
 
 .reasons-wrapper .reason_diag {
@@ -1332,10 +1430,10 @@ header {
   width: 100%;
   height: 5rem;
   padding: var(--white-space_default) 5%;
-  background-color: white;
+  background-color: var(--blue);
   -webkit-box-shadow: 0 0 5px var(--blue);
           box-shadow: 0 0 5px var(--blue);
-  color: #000;
+  color: white;
   -webkit-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
 }
@@ -1343,11 +1441,6 @@ header {
 header img {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-header.scrolled {
-  background: var(--blue);
-  color: #fff;
 }
 
 #main {
@@ -1898,60 +1991,5 @@ footer .copyright {
 
 #VerifiedAnalysts button i {
   margin-left: 20px;
-}
-
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  width: 100%;
-  height: 100%;
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-  font-family: var(--font-sans-serif);
-  font-size: 14px;
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
-  overflow-y: scroll;
-  scroll-padding-top: 100px;
-}
-
-img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-
-:root {
-  /* Restyling colors to use the HSL values */
-  --blue: hsl(225, 73%, 15%);
-  --light-blue: hsl(225, 74%, 50%);
-  --white: hsl(0, 0%, 100%);
-  --black: hsl(0, 0%, 0%);
-  --orange: hsl(6, 85%, 60%);
-  --trans_blue: hsla(225, 73%, 15%, 0.05);
-}
-
-:root {
-  --font-serif: "Open Sans";
-  --font-sans-serif: "Rubik";
-}
-
-:root {
-  --white-space_default: 20px;
-}
-
-:root {
-  --phone-screen: 620px;
-  --tablet-screen: 720px;
-  --laptop-screen: 960px;
 }
 /*# sourceMappingURL=style.css.map */

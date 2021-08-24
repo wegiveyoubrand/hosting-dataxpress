@@ -1109,22 +1109,7 @@ form button {
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 2rem 5%;
-}
-
-.reasons-wrapper .reason {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 20px;
-}
-
-.reasons-wrapper .reason > * {
-  margin-bottom: 15px;
+  padding: 3rem 5%;
 }
 
 .reasons-wrapper .reason a {

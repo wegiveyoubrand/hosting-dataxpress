@@ -1,7 +1,6 @@
 const Header = document.querySelector("header");
 
-Header.innerHTML = 
-    `
+Header.innerHTML = `
     <div class="company">
         <div class="logo" id="companyLogo">
         <img src="./public/images/DataXpressLogo.png" alt="" />
@@ -13,31 +12,34 @@ Header.innerHTML =
         <ul class="nav-list">
             <li class="nav-item">
             <a class="nav-link" href="./VerifedAnalysts.html">
-                About Us <i class="bx bx-arrow-back"></i
-            ></a>
+                About Us </a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="./index.html#benefits">
                 Our Services
-                <i class="bx bx-arrow-back"></i
-            ></a>
+                </a>
             </li>
 
             <li class="nav-item">
             <a class="nav-link" href="./index.html#about"
-                >Blog <i class="bx bx-arrow-back"></i>
+                >Blog 
             </a>
             </li>
 
             <li class="nav-item">
-            <a class="nav-link" href="./index.html#benefits"
-                >Join Forum <i class="bx bx-arrow-back"></i>
+            <a class="nav-link" href="./index.html#Forum"
+                >Join Forum 
             </a>
             </li>
 
+            <li class="nav-item" id="">
+            <a class="nav-link" href="./contact.html"
+                >Get in touch
+            </a>
+            </li>
             <li class="nav-item contactus" id="">
             <a class="nav-link" href="./contact.html"
-                >Get in touch <i class="bx bx-arrow-back"></i>
+                >Login
             </a>
             </li>
         </ul>
@@ -47,4 +49,4 @@ Header.innerHTML =
         <i class="material-icons">menu</i>
         </div>
     </nav>
-    `
+    `;
