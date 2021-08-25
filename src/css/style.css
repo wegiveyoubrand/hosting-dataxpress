@@ -570,6 +570,9 @@ nav i {
 }
 
 .cards .card.reason > div {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #3d5a5a;
   height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,6 +589,7 @@ nav i {
 .cards .card.reason > div > div {
   padding: 20px;
   background-color: rgba(10, 24, 66, 0.85);
+  background-repeat: no-repeat;
   color: #fff;
 }
 
