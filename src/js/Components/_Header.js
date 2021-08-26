@@ -27,13 +27,13 @@ Header.innerHTML = `
             </li>
 
             <li class="nav-item">
-            <a class="nav-link" href="./index.html#Forum"
+            <a class="nav-link" href="/index.html#Forum"
                 >Join Forum 
             </a>
             </li>
 
             <li class="nav-item" id="">
-            <a class="nav-link" href="./contact.html"
+            <a class="nav-link" href="/index.html#footer"
                 >Get in touch
             </a>
             </li>
