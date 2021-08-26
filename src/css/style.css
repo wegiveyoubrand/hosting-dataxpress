@@ -1858,8 +1858,8 @@ footer .copyright {
 
 #VerifiedAnalysts .container-title {
   position: relative;
-  height: 250px;
-  color: #38dbff;
+  height: 70vh;
+  color: #cdf2fa;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1871,11 +1871,11 @@ footer .copyright {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-weight: 300;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 20px;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 #VerifiedAnalysts .container-title#skew-1 {
@@ -1894,6 +1894,11 @@ footer .copyright {
   width: 100%;
   height: 100%;
   background: var(--blue);
+  background-image: url("/public/images/bgi_2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: overlay;
   content: "";
   z-index: -1;
   bottom: 0;
