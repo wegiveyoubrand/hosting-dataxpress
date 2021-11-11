@@ -12,11 +12,11 @@ Header.innerHTML = `
         <ul class="nav-list">
             <li class="nav-item">
             <a class="nav-link" href="./VerifedAnalysts.html">
-                About Us </a>
+                Our services </a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="./index.html#benefits">
-                Our Services
+                Solutions
                 </a>
             </li>
 
@@ -28,18 +28,13 @@ Header.innerHTML = `
 
             <li class="nav-item">
             <a class="nav-link" href="/index.html#Forum"
-                >Join Forum 
+                >About
             </a>
             </li>
-
-            <li class="nav-item" id="">
-            <a class="nav-link" href="/index.html#footer"
-                >Get in touch
-            </a>
-            </li>
+            
             <li class="nav-item contactus" id="">
             <a class="nav-link" href="./contact.html"
-                >Login
+                >My account
             </a>
             </li>
         </ul>
